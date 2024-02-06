@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Chansons</h2>
+  <table role="grid">
+    <thead>
+      <tr>
+        <th>Titre</th><th>Interprète</th><th>Taille</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let chanson of chansons">
+        <td>{{ chanson.titre }}</td>
+        <td>{{ chanson.interprete }}</td>
+        <td>{{chanson.taille | tailleFichier}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
